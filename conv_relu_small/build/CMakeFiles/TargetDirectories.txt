@@ -1,0 +1,3 @@
+/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/conv_relu_small/build/CMakeFiles/edit_cache.dir
+/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/conv_relu_small/build/CMakeFiles/rebuild_cache.dir
+/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/conv_relu_small/build/CMakeFiles/generator.dir

@@ -1,0 +1,3 @@
+/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/jacobi2d_r_big/build/CMakeFiles/edit_cache.dir
+/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/jacobi2d_r_big/build/CMakeFiles/rebuild_cache.dir
+/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/jacobi2d_r_big/build/CMakeFiles/generator.dir

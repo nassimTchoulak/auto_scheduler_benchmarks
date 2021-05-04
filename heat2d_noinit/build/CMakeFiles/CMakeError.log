@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/heat2d_noinit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_719ce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_719ce.dir/build.make CMakeFiles/cmTC_719ce.dir/build
+make[1]: Entering directory '/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/heat2d_noinit/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_719ce.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_719ce.dir/CheckSymbolExists.c.o   -c /data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/heat2d_noinit/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_719ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_719ce.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_719ce.dir/CheckSymbolExists.c.o  -o cmTC_719ce 
+CMakeFiles/cmTC_719ce.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_719ce.dir/build.make:97: recipe for target 'cmTC_719ce' failed
+make[1]: *** [cmTC_719ce] Error 1
+make[1]: Leaving directory '/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/heat2d_noinit/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_719ce/fast' failed
+make: *** [cmTC_719ce/fast] Error 2
+
+File /data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/heat2d_noinit/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/heat2d_noinit/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_821fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_821fe.dir/build.make CMakeFiles/cmTC_821fe.dir/build
+make[1]: Entering directory '/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/heat2d_noinit/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_821fe.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_821fe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_821fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_821fe.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_821fe.dir/CheckFunctionExists.c.o  -o cmTC_821fe -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_821fe.dir/build.make:97: recipe for target 'cmTC_821fe' failed
+make[1]: *** [cmTC_821fe] Error 1
+make[1]: Leaving directory '/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/heat2d_noinit/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_821fe/fast' failed
+make: *** [cmTC_821fe/fast] Error 2
+
+

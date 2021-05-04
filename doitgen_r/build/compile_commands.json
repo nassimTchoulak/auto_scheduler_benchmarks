@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/doitgen_r/build",
+  "command": "/usr/bin/c++  -DAT_PARALLEL_OPENMP=1 -I/data/scratch/k_abdous/software/tiramisu/3rdParty/Halide/include -I/data/scratch/k_abdous/software/tiramisu/include -I/data/scratch/k_abdous/software/tiramisu/3rdParty/isl/include -I/data/scratch/k_abdous/autoscheduler_benchmarks -isystem /data/scratch/k_abdous/software/libtorch/include -isystem /data/scratch/k_abdous/software/libtorch/include/torch/csrc/api/include   -Wl,--no-as-needed -ldl -g -lz -lpthread -std=c++11 -O0   -D_GLIBCXX_USE_CXX11_ABI=1 -o CMakeFiles/generator.dir/generator.cpp.o -c /data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/doitgen_r/generator.cpp",
+  "file": "/data/scratch/k_abdous/autoscheduler_benchmarks/benchmarks/doitgen_r/generator.cpp"
+}
+]
